@@ -1,0 +1,50 @@
+/* PC main grid */
+
+#mainWrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "SLIDE SLIDE SLIDE A"
+    "SLIDE SLIDE SLIDE B"
+    "C D D B"
+    "C E F G";
+}
+
+#mainSlide {
+  grid-area: SLIDE;
+}
+#mainGridA {
+  grid-area: A;
+  background-color: orange;
+  width: 438px;
+  height: 292px;
+}
+#mainGridB {
+  grid-area: B;
+  background-color: orange;
+}
+#mainGridC {
+  grid-area: C;
+}
+#mainGridD {
+  grid-area: D;
+}
+#mainGridE {
+  grid-area: E;
+  background-color: orange;
+  width: 438px;
+  height: 292px;
+}
+#mainGridF {
+  grid-area: F;
+  background-color: orange;
+  width: 438px;
+  height: 292px;
+}
+#mainGridG {
+  grid-area: G;
+  background-color: orange;
+  width: 438px;
+  height: 292px;
+}
