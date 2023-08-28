@@ -133,7 +133,7 @@ main {
   height: 100%;
 }
 #mainSlide {
-  width: 1012px;
+  /* width: 1012px; */
   height: 581px;
   background-color: #807474;
   position: relative;
@@ -190,9 +190,10 @@ main {
   letter-spacing: 1.75px;
   height: 40px;
   text-transform: uppercase;
+  color: white;
 }
 /* categories layout */
-.categories {
+.slide_categories {
   position: absolute;
   top: 153px;
   left: 50%;
@@ -219,4 +220,14 @@ main {
 }
 .right_arrow {
   margin-left: 50px;
+}
+
+.article_title {
+  font-family: Lato;
+  color: #fff;
+  font-size: 24px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.2px;
 }

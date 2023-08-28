@@ -9,6 +9,7 @@
     "SLIDE SLIDE SLIDE B"
     "C D D B"
     "C E F G";
+  gap: 32px;
 }
 
 #mainSlide {
@@ -17,8 +18,15 @@
 #mainGridA {
   grid-area: A;
   background-color: orange;
-  width: 438px;
-  height: 292px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.a_categories {
+  position: absolute;
+  top: 30px;
+  left: 0;
 }
 #mainGridB {
   grid-area: B;
@@ -33,18 +41,12 @@
 #mainGridE {
   grid-area: E;
   background-color: orange;
-  width: 438px;
-  height: 292px;
 }
 #mainGridF {
   grid-area: F;
   background-color: orange;
-  width: 438px;
-  height: 292px;
 }
 #mainGridG {
   grid-area: G;
   background-color: orange;
-  width: 438px;
-  height: 292px;
 }
