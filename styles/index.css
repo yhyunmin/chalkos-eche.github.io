@@ -1,0 +1,113 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@500;600&display=swap");
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #1d1f24;
+  user-select: none;
+  text-decoration: none;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 40px;
+}
+/* logo */
+.logo_container {
+  margin-left: 38px;
+  width: 60px;
+  height: 30px;
+}
+#logo {
+  font-family: Lato, sans-serif;
+  display: inline;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.369px;
+  position: relative;
+  width: 55px;
+  transition: all 0.15s;
+}
+#logo:hover {
+  color: #ddd;
+}
+#logo::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  bottom: 5px;
+  right: -6px;
+  background-color: #ff565c;
+}
+
+/* nav */
+.nav_container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 59px;
+}
+.nav_container a {
+  font-family: Oswald;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  opacity: 0.2;
+  color: #1d1f24;
+  transition: all 0.2s;
+  position: relative;
+}
+.nav_container a:after {
+  transition: all 0.3s;
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #333;
+}
+.nav_container a:hover {
+  opacity: 0.9;
+}
+.nav_container a:hover::after {
+  width: 100%;
+}
+
+/* navBtn */
+#navBtn {
+  border: none;
+  background-color: transparent;
+  width: auto;
+  height: 16px;
+  cursor: pointer;
+  margin-right: 44px;
+}
+#navBtn > svg {
+}
+#navBtn > svg #hamburgerBtn {
+  transition: 0.2s all;
+  opacity: 1;
+  fill: "#1D1F24";
+}
+#navBtn > svg:hover #hamburgerBtn {
+  opacity: 0.7;
+}
