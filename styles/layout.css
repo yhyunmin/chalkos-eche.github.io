@@ -23,6 +23,9 @@
 #mainSlide {
   grid-area: SLIDE;
 }
+.slide_arrow {
+  display: flex;
+}
 #mainGridA {
   grid-area: A;
   background-color: orange;
@@ -69,55 +72,4 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-}
-
-/* mobile */
-@media (320px <= width <768px) {
-  #mainWrap {
-    margin: 0 20px;
-  }
-  #mainWrap {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas:
-      "SLIDE "
-      "C"
-      "A"
-      "B"
-      "D";
-    gap: 18px;
-  }
-  #mainGridE,
-  #mainGridF,
-  #mainGridG {
-    display: none;
-  }
-  .nav_container {
-    display: none;
-  }
-}
-
-/* tablet */
-@media (768px <= width <= 1024px) {
-  #mainWrap {
-    margin: 0 20px;
-  }
-  #mainWrap {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    grid-template-areas:
-      "SLIDE SLIDE"
-      "SLIDE SLIDE"
-      "C A"
-      "C D"
-      "B B"
-      "E F";
-    gap: 15px;
-  }
-  #mainGridG {
-    display: none;
-  }
-  .nav_container {
-    display: none;
-  }
 }

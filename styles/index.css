@@ -127,7 +127,7 @@ main {
   height: 100%;
 }
 #mainSlide {
-  /* width: 1012px; */
+  /* width: 1012px;  */
   height: 581px;
   background-color: #807474;
   position: relative;
@@ -168,7 +168,6 @@ main {
 }
 /* slide img & contents  */
 .contents {
-
   text-align: center;
 }
 .contents h3,
