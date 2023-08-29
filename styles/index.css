@@ -34,7 +34,7 @@ header {
   width: 60px;
   height: 30px;
 }
-#logo {
+.logos {
   font-family: Lato, sans-serif;
   display: inline;
   font-size: 24px;
@@ -46,10 +46,10 @@ header {
   width: 55px;
   transition: all 0.15s;
 }
-#logo:hover {
+.logos:hover {
   color: #ddd;
 }
-#logo::after {
+.logos::after {
   content: "";
   position: absolute;
   width: 4px;
@@ -175,7 +175,6 @@ main {
   color: #fff;
 }
 .slide_title {
-  text-transform: uppercase;
   font-family: Oswald;
   font-size: 32px;
   font-style: normal;
@@ -249,4 +248,82 @@ main {
 /* article UI */
 .a_subtitle {
   line-height: 1.66;
+}
+
+/* readmore btn UI*/
+
+#readMore {
+  margin-top: 30px;
+  border: none;
+  outline: none;
+  background-color: #ff565c;
+  width: 210px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#readMore:hover {
+  background-color: #fff;
+}
+#readMore:hover p {
+  color: #ff565c;
+}
+#readMore p {
+  font-family: Oswald;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* footer  */
+
+#fContainer {
+  display: grid;
+  gap: 39px;
+  padding: 40px;
+  height: 160px;
+}
+.f_logo > h2 {
+  color: #494b4f;
+  margin-bottom: 6px;
+}
+.f_logo > h2:after {
+  opacity: 1 !important;
+}
+.copy {
+  margin-top: 6px;
+}
+.copy > p {
+  opacity: 0.7;
+  font-size: 14px;
+  font-family: Lato;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.28;
+}
+.f_nav {
+  text-transform: uppercase;
+  display: flex;
+  gap: 111px;
+  flex-wrap: wrap;
+}
+
+#fContainer {
+  background-color: #1d1f24;
+}
+#fContainer p {
+  color: #ebebeb;
+}
+.f_nav a {
+  color: #fff;
+  font-family: Oswald;
+  font-weight: 500;
+  letter-spacing: 1.75;
+  font-size: 14px;
 }
