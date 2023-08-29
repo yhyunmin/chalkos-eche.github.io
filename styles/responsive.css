@@ -22,7 +22,12 @@
   .nav_container {
     display: none;
   }
+
+  #footerWrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
+
 /* .slide_subtitle {
   display: none;
 }
