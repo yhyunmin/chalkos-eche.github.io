@@ -1,5 +1,8 @@
 /* PC main grid */
-
+#mainWrap {
+  margin-left: 40px;
+  margin-right: 45px;
+}
 #mainWrap {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -11,7 +14,12 @@
     "C E F G";
   gap: 32px;
 }
-
+.nav_container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 59px;
+}
 #mainSlide {
   grid-area: SLIDE;
 }
@@ -30,7 +38,11 @@
 }
 #mainGridB {
   grid-area: B;
-  background-color: orange;
+  background-color: #ff565c;
+  padding: 0 26px;
+}
+#mainGridB > h2 {
+  margin-bottom: 20px;
 }
 #mainGridC {
   grid-area: C;
@@ -49,4 +61,63 @@
 #mainGridG {
   grid-area: G;
   background-color: orange;
+}
+
+.contents {
+  max-width: 593px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* mobile */
+@media (320px <= width <768px) {
+  #mainWrap {
+    margin: 0 20px;
+  }
+  #mainWrap {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "SLIDE "
+      "C"
+      "A"
+      "B"
+      "D";
+    gap: 18px;
+  }
+  #mainGridE,
+  #mainGridF,
+  #mainGridG {
+    display: none;
+  }
+  .nav_container {
+    display: none;
+  }
+}
+
+/* tablet */
+@media (768px <= width <= 1024px) {
+  #mainWrap {
+    margin: 0 20px;
+  }
+  #mainWrap {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+      "SLIDE SLIDE"
+      "SLIDE SLIDE"
+      "C A"
+      "C D"
+      "B B"
+      "E F";
+    gap: 15px;
+  }
+  #mainGridG {
+    display: none;
+  }
+  .nav_container {
+    display: none;
+  }
 }
