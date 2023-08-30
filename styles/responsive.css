@@ -1,5 +1,8 @@
 /* mobile */
 @media (320px <= width <768px) {
+  body {
+    height: 100vh;
+  }
   #mainWrap {
     margin: 0 20px;
   }
@@ -14,6 +17,8 @@
       "D";
     gap: 18px;
   }
+
+  #mainGridD,
   #mainGridE,
   #mainGridF,
   #mainGridG {
@@ -68,11 +73,11 @@
   }
   .f_nav {
     margin-left: 0;
-    gap: 20px;
+    gap: 16px;
     margin-bottom: 62px;
   }
   .f_nav a {
-    width: 64px;
+    width: 24px;
   }
 }
 
