@@ -30,19 +30,33 @@
 }
 #mainGridA {
   grid-area: A;
-  background-color: orange;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: url(/assets/img/img1.png);
+  background-size: cover;
+  background-color: #000;
 }
 .a_categories {
   position: absolute;
   top: 30px;
   left: 0;
 }
+
+#mainGridA,
+#mainGridC,
+#mainGridD,
+#mainGridE,
+#mainGridF,
+#mainGridG {
+  position: relative;
+  display: flex;
+  padding-left: 25px;
+  align-items: center;
+}
+#mainGridD {
+}
 #mainGridB {
   grid-area: B;
+  position: relative;
+
   background-color: #ff565c;
   padding: 0 26px;
   padding-bottom: 30px;
@@ -51,22 +65,44 @@
   margin-bottom: 20px;
 }
 #mainGridC {
+  display: flex;
+  position: relative;
   grid-area: C;
 }
 #mainGridD {
+  display: flex;
+
+  position: relative;
   grid-area: D;
+  background-image: url(/assets/img/img2.png);
+  background-size: cover;
+  background-color: #000;
 }
 #mainGridE {
+  display: flex;
+
+  position: relative;
   grid-area: E;
-  background-color: orange;
+  background-image: url(/assets/img/img3.png);
+  background-size: cover;
+  background-color: #000;
 }
 #mainGridF {
+  display: flex;
+
+  position: relative;
   grid-area: F;
-  background-color: orange;
+  background-image: url(/assets/img/img4.png);
+  background-size: cover;
+  background-color: #000;
 }
 #mainGridG {
+  display: flex;
+  position: relative;
   grid-area: G;
-  background-color: orange;
+  background-image: url(/assets/img/img5.png);
+  background-size: cover;
+  background-color: #000;
 }
 
 .contents {
@@ -141,6 +177,9 @@
 .story {
   padding-top: 1.5px;
   min-width: 316px;
+}
+.s_title {
+  margin-top: 35px;
 }
 .story ul {
   display: flex;

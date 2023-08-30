@@ -5,7 +5,7 @@
   }
   #mainWrap {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 441px 602px 274px 498px 274px;
     grid-template-areas:
       "SLIDE "
       "C"
@@ -25,6 +25,24 @@
 
   #footerWrap {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .slide_categories {
+    top: 87px;
+  }
+  .slide_layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slide_title {
+    text-align: center;
+    font-size: 26px;
+  }
+  .slide_subtitle {
+    display: none;
+  }
+  .slide_arrow {
+    display: none;
   }
 }
 
@@ -63,5 +81,38 @@
   }
   .nav_container {
     display: none;
+  }
+  #fContainer {
+    height: 280px;
+    grid-template-areas:
+      "A B B"
+      "C C C";
+  }
+  .f_logo {
+    width: 200px;
+  }
+  .f_nav {
+    gap: 12px;
+  }
+  .f_nav a {
+    width: 40px;
+  }
+  .f_subscribe {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+  }
+  .f_follow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .f_follow {
+    gap: 24px;
+  }
+  .f_inputs {
+    margin-top: 0;
+    margin-right: 29px;
   }
 }
