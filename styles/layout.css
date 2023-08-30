@@ -13,6 +13,7 @@
     "C D D B"
     "C E F G";
   gap: 32px;
+  padding-bottom: 120px;
 }
 .nav_container {
   display: inline-flex;
@@ -44,6 +45,7 @@
   grid-area: B;
   background-color: #ff565c;
   padding: 0 26px;
+  padding-bottom: 30px;
 }
 #mainGridB > h2 {
   margin-bottom: 20px;
@@ -133,4 +135,27 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+/* stories UI */
+.story {
+  padding-top: 1.5px;
+  min-width: 316px;
+}
+.story ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 28px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.story ul li {
+  display: flex;
+  align-items: start;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.s_number {
+  margin-right: 26px;
 }

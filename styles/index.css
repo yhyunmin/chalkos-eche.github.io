@@ -128,7 +128,7 @@ main {
 }
 #mainSlide {
   /* width: 1012px;  */
-  height: 581px;
+  min-height: 581px;
   background-color: #807474;
   position: relative;
 }
@@ -300,10 +300,6 @@ main {
   font-weight: 400;
   line-height: 1.28;
 }
-.f_nav {
-  text-transform: uppercase;
-  gap: 111px;
-}
 
 #fContainer {
   background-color: #1d1f24;
@@ -311,10 +307,62 @@ main {
 #fContainer p {
   color: #ebebeb;
 }
+
+.f_nav {
+  text-transform: uppercase;
+  /* gap: 111px; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  height: 54px;
+  /* width: 657px; */
+  margin-left: 39px;
+}
+
 .f_nav a {
   color: #fff;
   font-family: Oswald;
   font-weight: 500;
   letter-spacing: 1.75;
+  margin-right: 111px;
   font-size: 14px;
+  width: 80px;
+}
+
+/* mainGridD */
+.story {
+  border: 1px solid #f2f3f6;
+  background-color: #fff;
+  /* height: 580px; */
+  flex: 1;
+}
+.story ul li:first-child {
+  border: none;
+}
+.s_title {
+  text-transform: uppercase;
+  color: #1d1f24;
+  font-family: Oswald;
+  font-size: 14px;
+  letter-spacing: 1.531px;
+}
+
+.s_article {
+  text-transform: capitalize;
+  border-bottom: 1px solid #f2f3f6;
+}
+
+.s_number {
+  opacity: 0.16;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 500;
+}
+.s_text {
+  font-weight: 500;
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 1.44;
+  letter-spacing: -0.2px;
 }
